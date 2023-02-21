@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai16</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        ul{
+            list-style-type: none;
+        }
+        .main{
+            width: 360px;
+            height: 520px;
+            padding: 0px 8px;
+            box-shadow: 0 0 5px 5px grey;
+            margin: 40px auto;
+        }
+        .main h1{
+            text-align: center;
+            margin-bottom: 18px;
+        }
+        .main h3{
+            margin-bottom: 18px;
+        }
+        .main select{
+            width: 90px;
+        }
+        .main input{
+            margin: 3px 0px;
+        }
+        
+        .main button{
+            margin: 8px 0px;
+        }
+        .lastul li{
+            display: inline;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <form action="">
+            <h1>Travel reservation form</h1>
+            <h3>*denotes mandotory</h3>
+            <label for="name">Full name*:</label> <br>
+            <input id="1" name="fullname" placeholder="Firstname lastName" type="text"> <br>
+            <label for="email">Email address*:</label> <br>
+            <input id="2" name="email" placeholder="EMAIL_ADDRESS" type="text" > <br>
+            <label for="Select">Select Tour Package*:</label> <br>
+            <select style="margin: 3px 0px;" name="sl" id="3">\
+                <option placeholder="goa">Goa</option>
+            </select> <br>
+            <label for="arri">Arrival date*:</label> <br>
+            <input id="4" name="date" placeholder="m/d/y" type="date"> <br>
+            <label for="number">Number of person*:</label> <br>
+            <input id="5" name="number" placeholder="UNKOWN_TYPE" type="text">
+            <p>What would you want to avail ?*</p>
+            <ul>
+                <li>
+                    <span>Boarding</span>
+                    <input type="checkbox">
+                </li>
+                <li>
+                    <span>Fooding</span>
+                    <input type="checkbox">
+                </li>
+                <li>
+                    <span>Sight seeing</span>
+                    <input type="checkbox">
+                </li>
+            </ul>
+            <p>Discount Coupon code:</p>
+            <input id="6" name="code" type="text"> <br>
+            <p>Terms and condition*</p>
+            <ul class="lastul">
+                <li>
+                    <input name="y" type="radio">
+                    <span>I agree</span>
+                </li>
+                <li>
+                    <input name="y" type="radio">
+                    <span>I disagree</span>
+                </li>
+            </ul>
+            <button>Complete reservation</button>
+        </form>
+    </div>
+</body>
+</html>

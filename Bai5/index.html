@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai5</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+
+        /* css cho main box A */
+        .mainA{
+            margin: 10px auto;
+            width: 400px;
+            box-shadow: 0 0 5px 5px #333;
+            padding: 5px 0px;
+        }
+        /* tao the inline block cho link 1 */
+        .example p{
+            padding:0px 5px;
+            display: inline-block;
+        }
+        /* cac the p ke nhau se co 1 border */
+        .example p + p{
+            border-left: 1px solid #888;
+        }
+        /* css cho the H2 */
+       h2{
+        margin: 10px;
+       }
+        /* css cho the ol */
+        ul{
+            padding-left: 50px;
+            list-style-type: disc;
+            margin-bottom: 15px;
+        }
+        /* css khoang cach cho the p cuoi cung */
+        .lastp{
+            margin-top: 20px;
+        }
+
+
+
+        /* css cho main Box B */
+        .mainB{
+            width: 510px;
+            height: 480px;
+            margin: 50px auto;
+            box-shadow: 0 0 5px 5px grey;
+            padding: 0px 5px;
+        }
+        .mainB h2{
+            margin: 10px;
+
+        }
+        .mainB p{
+            margin: 10px 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="mainA">
+        <div class="example">
+            <h2>Example Cafe Menu</h2>
+            <p><a href="#startid">Starters</a></p>
+            <p><a href="#courseid">Main Courses</a></p>
+            <p><a href="#dessertid">Desserts</a></p>
+        </div>
+        <div id="startid" class="start">
+            <h2>Starters</h2>
+            <ul>
+                <li>Chestnut and Mushroom Goujons (<a href="">v</a>)</li>
+                <li>Goat cheese Salad (<a href="">v</a>)</li>
+                <li>Honey Soy Chicken Kebabs</li>
+                <li>Sefood Salad</li>
+            </ul>
+            <p><a href="https://www.youtube.com/channel/UCwHfYzhMV34mQyNVj5mnu2g">Back to top</a></p>
+        </div>
+        <div id="courseid" class="main-course">
+            <h2>Main courses</h2>
+            <ul>
+                <li>Spinach and Ricotta Roulade (<a href="https://www.youtube.com/channel/UCwHfYzhMV34mQyNVj5mnu2g">v</a>)</li>
+                <li>Beef Tournados with Mustard and Dill Sauce</li>
+                <li>Roast Chicken Salad</li>
+                <li>Icelandic Cod with Parsley Sauce</li>
+                <li>Mushroom Wellington (<a href="https://www.youtube.com/channel/UCwHfYzhMV34mQyNVj5mnu2g">v</a>)</li>
+            </ul>
+            <p><a href="https://www.youtube.com/channel/UCwHfYzhMV34mQyNVj5mnu2g">Back to top</a></p>
+        </div>
+        <div id="dessertid" class="dessert">
+            <h2>Dessert</h2>
+            <ul>
+                <li>Lemon Sorbert (<a href="https://www.youtube.com/channel/UCwHfYzhMV34mQyNVj5mnu2g">v</a>)</li>
+                <li>Chocolate Mud lie (<a href="https://www.youtube.com/channel/UCwHfYzhMV34mQyNVj5mnu2g">v</a>)</li>
+                <li>Pecan Pie (<a href="https://www.youtube.com/channel/UCwHfYzhMV34mQyNVj5mnu2g">v</a>)</li>
+                <li>Selection of Fine Cheeses from Aroud the World</li>
+            </ul>
+            <p><a href="">Back to top</a></p>
+        </div>
+        <p class="lastp">Items marked with a (v) are suitable for vegetarians</p>
+    </div>
+
+
+
+
+    
+    <div class="mainB">
+        <div class="linking">
+            <h2>Linking and Navigation</h2>
+            <p>This page covers the following topics:</p>
+            <ul>
+                <li><a href="#url">URLs</a></li>
+                <li><a href="#source">Source Anchors</a></li>
+                <li><a href="https://www.youtube.com/channel/UCwHfYzhMV34mQyNVj5mnu2g">Destination Anchors</a></li>
+                <li><a href="https://www.youtube.com/channel/UCwHfYzhMV34mQyNVj5mnu2g">Example</a></li>
+            </ul>
+        </div>
+        <div id="url" class="URLs">
+            <h2>URLs</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus eveniet commodi maxime voluptatibus voluptatum iste earum itaque sed quos, accusantium velit corrupti eum vero debitis optio eos praesentium saepe delectus.</p>
+            <p><a href="https://www.youtube.com/channel/UCwHfYzhMV34mQyNVj5mnu2g">Back to top</a></p>
+        </div>
+        <div id="source" class="Source">
+            <h2>Source Anchors</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam voluptas magnam, cumque asperiores inventore eaque fugit, sed aperiam ex, facilis sequi dolorem non consequatur obcaecati soluta recusandae enim? Mollitia, nihil.</p>
+            <p><a href="https://www.youtube.com/channel/UCwHfYzhMV34mQyNVj5mnu2g">Back to top</a></p>
+
+        </div>
+    </div>
+</body>
+</html>

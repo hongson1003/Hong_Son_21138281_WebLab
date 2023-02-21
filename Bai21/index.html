@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai21</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Itim&family=Poppins:wght@100&family=Roboto:wght@100&family=Sofia+Sans+Extra+Condensed:wght@100&family=Unbounded:wght@200&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+   <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        ul{
+            list-style-type: none;
+        }
+        .main{
+            width: 725px;
+            height: 525px;
+            margin: 30px auto;
+            box-shadow: 0 0 5px 5px grey;
+        }
+        .main__title{
+            width: 100%;
+            height: 80px;
+        }
+        .main__title h1{
+            text-align: center;
+            font-family: 'Itim', cursive;        
+        }
+        .main__title span:first-child{
+            color: #545453
+        }
+        .main__title span:last-child{
+            color: #90C240;
+        }
+        .main__title p{
+            font-size: 12px;
+            margin-top: 10px;
+            text-align: center;
+            font-family: 'Unbounded', cursive;
+        }
+        .main__nav{
+            background-color: #626262;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            height: 35px;
+        }
+        .main__nav div{
+            height: 100%;
+            padding: 0px 5px;
+            color:#E5E5E5;
+            font-size: 13px;
+            display: flex;
+            align-items: center;
+        }
+        .main__nav select{
+            color:#E5E5E5;
+            background-color: #626262;
+            font-size: 13px;            
+            font-weight: bold;
+            border: none;
+        }
+        .main__nav .summary{
+            display: flex;
+        }
+        .main__nav .summary h3{
+            margin-right: 5px;
+        }
+        .main__nav .html{
+            background-color: #8cc10c;
+        }
+        .main__nav .find{
+            width: 40px;
+        }
+        .main__content{
+            display: flex;
+            width: 100%;
+            height: 410px;
+            overflow: hidden;
+        }
+        .main__content .chapterlist{
+            padding-left: 15px;
+            padding-top: 15px;
+            box-sizing: border-box;
+            background-color: #F1F1F1;
+            width: 30%;
+            height: 100%;
+        }
+        .main__content--title{
+            font-size: 20px;
+            margin: 10px 0px;
+        }
+        .content{
+            width: 70%;
+            background-color: #FFFFFF;
+        }
+        .content .imgg{
+            overflow: hidden;
+            position: relative;
+            border-top: 7px dashed #F5A323;
+            border-bottom: 7px dashed #F5A323;
+            margin: 14px auto;
+            width: 465px;
+            height: 80px;
+            background-color: #ADB0B5;
+        }
+        
+        .content .imgg img{
+            float: left;
+            width: 200px;
+            height: 40px;
+            display: block;
+            margin-right: 20px;
+        }
+        .content .opensouce{
+            max-width: 430px;
+            font-size: 18px;
+        }
+        .content .imgg .chuthich{
+            color: #F8F8F8;
+            margin-left: 220px;
+        }
+        .content .imgg .setting{
+            width: 100px;
+            position: absolute;
+            right: 10px;
+            bottom: -18px;
+        }
+        .content .content--main{
+            width: 95%;
+            margin: 10px 0px;
+            margin-left: 20px;
+        }
+        .content--main ul{
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .content .content--main ul li a{
+            margin: 5px;
+            font-weight: bold;
+            font-size: 20px;
+            color: #8AC007;
+            text-decoration: none;
+        }
+        .content .text1{
+            margin-top: 20px;
+            padding-bottom: 50px;
+            border-bottom: 2px solid grey;
+        }
+        .content .text1 img{
+            float: left;
+            margin-right: 20px;
+        }
+        .content .plast{
+            margin-top: 5px;
+            font-size: 20px;
+            font-weight: 800px;
+
+        }
+
+    
+
+
+        
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="main__title">
+            <h1><span>W3chools.</span><span>com</span></h1>
+            <p>THE WORLD'S LARGEST WEB DEVELOPER SITE</p>
+        </div>
+        <div class="main__nav">
+            <div><i class="fa-solid fa-house"></i></div>
+            <div class="html"><h3>HTML</h3></div>
+            <div><h3>CSS</h3></div>
+            <div><h3>JAVASCRIPT</h3></div>
+            
+            <div class="summary">
+                <h3>TUTORIALS</h3>
+                <details open>
+                    <summary></summary> 
+                </details>
+            </div>
+            <div class="summary">
+                <h3>REFERENCES</h3>
+                <details open>
+                    <summary></summary> 
+                </details>
+            </div>
+            <div class="summary">
+                <h3>EXAMPLE</h3>
+                <details open>
+                    <summary></summary> 
+                </details>
+            </div>
+            <div><i class="fa-sharp fa-solid fa-earth-americas"></i></div>
+            <div class="find"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></div>
+        </div>
+        <div class="main__content">
+            <div class="chapterlist">
+                <p class="main__content--title">HTML Tutorals</p>
+                <p class="main__content--home"><b>HTML HOME</b></p>
+                <p>HTML Introduction</p>
+                <p>HTML Editors</p>
+                <p>HTML Basic</p>
+                <p>HTML Elements</p>
+                <p>HTML Attributes</p>
+                <p>HTML Headdings</p>
+                <p>HTML Paragraphs</p>
+                <p>HTML Styles</p>
+                <p>HTML Formatting</p>
+                <p>HTML Computercode</p>
+                <p>HTML Comments</p>
+                <p>HTML CSS</p>
+                <p>HTML Links</p>
+                <p>HTML Images</p>
+                <p>HTML Tables</p>
+                <p>HTML  Lists</p>
+                <p>HTML Blocks</p>
+            </div>
+            <div class="content">
+                <div class="imgg">
+                    <img src="https://tuoitreiuh.com/wp-content/uploads/2019/04/Logo-HSV-truong-01.png" alt="">
+                    <p class="opensouce">Open, Create, Convert & Save files</p>
+                    <p class="chuthich">from your applications</p>
+                    <p style="margin-left: 40px;">Platform Independence</p>
+                    <img class="setting" src="https://cdn.pixabay.com/photo/2014/04/02/11/16/cog-305746_960_720.png" alt="">
+                </div>
+                <div class="content--main">
+                    <h1 class="content--title">HTMT(5) Tutorial</h1>
+                    <ul>
+                        <li><a href="">&lt;&lt; W3schools Home</a></li>
+                        <li><a href="">Next chapter&gt;&gt;</a></li>
+                    </ul>
+                    <div class="text1">
+                        <img src="https://www.w3schools.com/html/html5.gif" alt="">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem dolore quos amet culpa saepe cupiditate eligendi, modi fuga ea! Facilis beatae aspernatur odit nulla quo. Et sapiente pariatur dicta nam?</p>
+                    </div>
+                    <div class="text2">
+                        <p class="plast">Examples in Every Chapter</p>
+                        <p>this HTML tutorial contains hundreds of HTML examples</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+</html>

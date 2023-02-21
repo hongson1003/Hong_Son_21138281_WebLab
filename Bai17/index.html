@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai17</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        /*  cau a */
+        .main{
+            width: 686px;
+            height: 700px;
+            background-color: #FFD078;
+            padding: 5px;
+            margin: 30px auto;
+            box-shadow: 0 0 5px 5px grey;
+        }
+        .main h2{
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        ol{
+            margin-top: 20px;
+            padding-left: 40px;
+        }
+        ul{
+            list-style-type: none;
+        }
+        .main ol li .qs2 li{
+            display: inline;
+        }
+        .main ol li .qs2 li .year{
+            max-width: 40px;
+        }
+        .main ol li .qs5 li{
+            display: inline;
+        }
+        .main .btn{
+            text-align: center;
+        }
+        .main .btn li{
+            margin: 30px;
+            display: inline-block;
+
+        }
+        /*  cau */
+        .box{
+            width: 450px;
+            height: 620px;
+            box-shadow: 0 0 5px 5px grey;
+            margin: 30px auto;
+            padding: 8px;
+
+        }
+        #d1{
+            min-width: 160px;
+        }
+        .box div + div{
+            margin: 15px 0px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cau a -->
+    <div class="main">
+        <form action="">
+            <h2>Survey Form</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla sed consectetur vitae ea, adipisci repellat magnam minima modi recusandae officiis consequatur odit sequi omnis. Deserunt dolorum cumque placeat iure iste.</p>
+            <ol>
+                <!-- qs1 -->
+                <li>
+                    <label for="cau1">What is your name?</label> <br>
+                    <input type="text">
+                </li>
+                <!-- qs2 -->
+                <li>
+                    <label for="cau1">What is your date of birth?</label> <br>
+                    <ul class="qs2">
+                        <li>
+                            <span>Month:</span>
+                            <select name="date" id="datek">
+                                <option value="1">January</option>
+                                <option value="2">February</option>
+                                <option value="3">March</option>
+                            </select>
+                        </li>
+                        <li>
+                            <span>Date</span>
+                            <select name="day" id="dayk">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label for="year">Year:</label>
+                            <input value="19" class="year" name="yeark" type="text">
+                        </li>
+                    </ul>
+                </li>
+                <!-- qs3 -->
+                <li>
+                    <label for="cau3">What is your mailing address (if you would like to have a hard copy of our catalog sent to you)?</label>
+                    <textarea name="txt" id="txtks" cols="50" rows="5">Number/P.O. Box/Route:
+                    Street/Aventure
+                    </textarea>
+
+                </li>
+                <!-- qs4 -->
+                <li>
+                    <label for="email">What is your email address</label> <br>
+                    <input name="emailtxt" type="text">
+
+
+                </li>
+                <!-- qs5 -->
+                <li>
+                    <label for="product">Have you viewed our online product catalog?</label>
+                    <ul class="qs5">
+                        <li>
+                            <input name="os" type="radio">
+                            <span>Yes</span>
+                        </li>
+                        <li>
+                            <input name="os" type="radio">
+                            <span>No</span>
+                        </li>
+                    </ul>
+
+                </li>
+                <!-- qs6 -->
+                <li>
+                    <label for="if">If so, what product(s), besides the one you are ordering, might you be interesed in purchasing in the future? (check all that apply) </label>
+                    <ul>
+                        <li>
+                            <input type="checkbox">
+                            <span>VCR</span>
+                        </li>
+                        <li>
+                            <input type="checkbox">
+                            <span>Big Screen TV</span>
+                        </li>
+                        <li>
+                            <input type="checkbox">
+                            <span>Audio Equipment</span>
+                        </li>
+                        <li>
+                            <input type="checkbox">
+                            <span>Video Equipment</span>
+                        </li>
+                        <li>
+                            <input type="checkbox">
+                            <span>Camara Equipment</span>
+                        </li>
+                        <li>
+                            <input type="checkbox">
+                            <span>Other</span>
+                            <input name="otheroption" value="Please list" type="text">
+                        </li>
+                    </ul>
+                
+                </li>
+                <!-- qs7 -->
+                <li>
+                    <label for="qs7">Do you have any question, comments or suggesstion before proceeding to the Order Form?</label>
+                    <textarea name="qs7" id="qs7K" cols="60" rows="5">Your input:</textarea>
+                </li>
+            </ol>
+            <ul class="btn">
+                <li><button>Send Form</button></li>
+                <li><button>Clear Form</button></li>
+            </ul>
+        </form>
+    </div>
+    <!-- Cau b -->
+    <div class="box">
+        <form action="">
+            <div>
+                <label for="browser">Browser</label>
+                <select name="brser" id="d1"></select>
+            </div>
+            <div>
+                <label for="user">Username:</label>
+                <input type="text">
+            </div>
+            <div>
+                <label for="encry">Encryption:</label>
+                <select name="encry" id="encry">
+                    <option value="2048">2048 (High Grade)</option>
+                </select>
+            </div>
+            <div>
+                <input type="range" min="0" max="100" value="70" >
+            </div>
+            <div>
+                <input value="50" type="text">                
+            </div>
+            <div>
+                <label for="birthday">Birthday:</label>
+                <input type="date">
+            </div>
+            <div>
+                <label for="color">Select your favorite color:</label>
+                <input name="favorite" type="color" value="#FF0000">
+            </div>
+            <div>
+                <label for="month">Birthday (month and year):</label>
+                <input name="month" type="month" >
+            </div>
+            <div>
+                <label for="selectweek">Select a week:</label>
+                <input name="month" type="week" >
+            </div>
+            <div>
+                <label for="time">Select a time</label>
+                <input name="time" type="time" >
+            </div>
+            <div>
+                <label for="dayandtime">Birthday (day and time)</label>
+                <input name="dayandtime" type="datetime" >
+            </div>
+            <div>
+                <label for="email">E-mail: </label>
+                <input name="email" type="email">
+            </div>
+            <div>
+                <label for="searchgg">Search Google</label>
+                <input name="search" type="search" >
+            </div>
+            <div>
+                <label for="teltephone">Telephone: </label>
+                <input name="tele" type="text" >
+            </div>
+            <div>
+                <label for="homepage">Add your homepage</label>
+                <input name="homepage" type="text" >
+            </div>
+            <div>
+                <input type="submit">
+            </div>
+            <p><b>Note:</b>The datalist tag is not supported in Safari or IE9 (and earlier).</p>
+
+        </form>
+    </div>
+</body>
+</html>

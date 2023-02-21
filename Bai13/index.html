@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai13</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* CSS */
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        ul{
+            list-style-type: none;
+        }
+        .main{
+            font-size: 12px;
+            width: 210px;
+            height: 400px;
+            margin: 30px auto;
+            background-color: #FFFFFF;
+            padding: 10px;
+            box-shadow: 0 0 5px 5px grey;
+        }
+        .main__favorite{
+            background-color: #E6E6E6;
+            width: 33px;
+            height: 18px;
+            border: 1px solid grey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .main__favorite--color{
+            width: 24px;
+            height: 10px;
+            background-color: blue;
+        }
+        input{
+            margin: 10px 0px;
+        }
+        .main__space{
+            margin: auto;
+            width: 210px;
+            height: 140px;
+            border: 1px solid #D3D3D3;
+            margin-bottom: 6px;
+        }
+        .main__space__item{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 180px;
+            height: 30px;
+            margin: auto;
+        }
+        .item__right li{
+            display: inline-block;
+        }
+        .item__right li button{
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+        }
+        .main table{
+            border-collapse: collapse;
+            margin: auto;
+            width: 190px;
+            height: 100px;
+            border: 1px solid #8AACE3;
+            text-align: center;
+        }
+        .main .date{
+            border-bottom: none;
+            border-top: 1px solid #888;
+            margin: 0px;
+            padding: 0px;
+        }
+        th{
+            background-color: #F5F5F5;
+        }
+        .lastbtn{
+            width: 80px;
+            height: 20px;
+            margin-left: 50px;
+        }
+
+
+
+        
+
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <form action="">
+            <label for="name">Name:</label> <br>
+            <input placeholder="Your Name" type="text"> <br>
+            <label for="telephoneName">Telephone Name</label> <br>
+            <input placeholder="Your Phone" type="text"> <br>
+            <label for="Email">Email</label> <br>
+            <input placeholder="Your Email" type="text"> <br>
+            <label for="Favorite">Favorite color</label>
+            <div class="main__favorite">
+                <div class="main__favorite--color">
+
+                </div>
+            </div>
+            <label for="dateofbirth">Date of Birth</label> <br>
+            <input class="date" autocomplete="on" type="date" Value="1/1/2023"> <br>
+            <div class="main__space">
+                <div class="main__space__item">
+                    <div class="item__left">
+                        <span>July 2015</span>
+                        <details open style="display: inline">
+                            <summary></summary>
+                        </details>
+                    </div>
+                    <div class="item__right">
+                        <ul>
+                            <li><button class="item1"><i class="fa-solid fa-caret-left"></i></button></li>
+                            <li><button class="item2"><i style="scale: 0.6;" class="fa-solid fa-circle"></i></button></li>
+                            <li><button class="item3"><i class="fa-solid fa-caret-right"></i></button></li>
+                        </ul>
+                    </div>
+                </div>
+                <table>
+                    <tr>
+                        <th>Sun</th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Web</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                    </tr>
+                    <tr>
+                        <td style="color: #CFD1D7">28</td>
+                        <td style="color: #CFD1D7">29</td>
+                        <td style="color: #CFD1D7">30</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>13</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td>20</td>
+                        <td>21</td>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>26</td>
+                        <td style="border: 1px solid #CFD1D7";>27</td>
+                        <td>28</td>
+                        <td>29</td>
+                        <td>30</td>
+                        <td>31</td>
+                        <td style="color: #CFD1D7">1</td>
+                    </tr>
+                </table>
+            </div>
+            <button class="lastbtn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

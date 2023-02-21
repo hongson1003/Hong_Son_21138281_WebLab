@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai14</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .box{
+            margin: 30px auto;
+            width: 650px;
+            height: 360px;
+            box-shadow: 0 0 5px 5px grey;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .box h1{
+            margin-left: 10px;
+            margin-bottom: 20px;
+        }
+        .box p{
+            margin-bottom: 20px;
+        }
+
+        .box .mess input{
+            width: 355px;
+            height: 150px;
+        }
+        .box__item{
+            margin: 4px;
+        }
+        label{
+            display: inline-block;
+            min-width: 158px;
+        }
+
+        .google{
+            display: inline-block;
+            border: 1px solid black;
+            width: 165px;
+            height: 20px;
+            margin-top: 2px;
+            margin-left: 8px;
+            margin-bottom: 6px;
+            border-radius: 3px;
+            display: flex;
+            justify-content: space-between;
+            padding-left: 2px;
+            box-sizing: border-box;
+        }
+        .email, .google{
+            min-width: 165px;
+        }
+        .question{
+            display: flex;
+            align-items: center;
+        }
+        .new input{
+            margin-left: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>Contact Us</h1>
+        <p>Use the following form to send a message to Example Cafe</p>
+        <form action="">
+            <div class="box__item email">
+                <label for="name">Your email</label>
+            <input type="email"> <br>
+            </div>
+            <div class="box__item mess">
+                <label for="message">Message</label> 
+                <input type="text">
+            </div>
+            <div class="question">
+                <label for="">How did you hear of us?</label>
+                <div class="google">
+                    <span>Google</span>
+                    <!-- <i style="padding-right: 5px;" class="fa-solid fa-caret-down"></i> -->
+                    <details open><summary></summary></details>
+                </div>
+            </div>
+            <div class="new">
+                <label for="">Newsletter</label>
+                <input type="checkbox">
+                <span>Ensure this box is checked if you would like to receive email updates </span>
+            </div>
+            <input value="Send message" type="submit">
+        </form>
+
+
+    </div>
+</body>
+</html>

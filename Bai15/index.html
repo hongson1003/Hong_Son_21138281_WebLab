@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai15</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        ul{
+            list-style-type: none;
+        }
+
+        /* CSS cho main 1 */
+        .main1 fieldset{
+            padding: 4px 20px;
+            box-sizing: border-box;
+        }
+        .main1{
+            font-size: 13.5px;
+            width: 435px;
+            height: 410px;
+            padding: 5px;
+            box-sizing: border-box;
+            margin: 30px auto;
+            box-shadow: 0 0 5px 5px grey;
+        }
+        .main1 .table{
+            width: 390px;
+        }
+        .main1 h1{
+            margin-bottom: 18px;
+        }
+
+        .main1 .table2 select{
+            width: 130px;
+            padding: 2px;
+        }
+        .main1 .table1 .td1{
+            width: 70px ;
+        }
+        .checkbox{
+            margin: 0px 5px;
+        }
+        
+        /* CSS cho main2 */
+        .main2{
+            font-size: 13.5px;
+            width: 420px;
+            height: 470px;
+            margin: 50px auto;
+            box-shadow: 0 0 5px 5px grey;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+        .main2 fieldset{
+            padding: 4px 8px;
+            box-sizing: border-box;
+        }
+        .main2 ul li{
+            display: inline;
+        }
+        .main2 fieldset:last-child{
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <!-- Main 1 -->
+    <div class="main main1">
+        <h1><i>Contact Us</i></h1>
+        <form action="">
+            <fieldset>
+                <legend>Your message</legend>
+                <table class="table1">
+                    <tr>
+                        <td class="td1"><label for="name">To</label></td>
+                        <td><input value="Example Cafe" type="text"></td>
+                    </tr>
+                    <tr>
+                        <td class="td1"><label style="width: 100px; height: 30px" for="name">Your email</label></td>
+                        <td style="max-width: 250px;"><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td class="td1"><label for="name">Message</label></td>
+                        <td rowspan="50"><textarea name="textbody" id="emailbody" cols="38" rows="10"></textarea></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend>How did you hear</legend>
+                <table  class="table2">
+                    <tr>
+                        <td width="100px"><label for="title">How did you hear of us</label></td>
+                        <td><select name="optionName" id="name">
+                            <option value="Google">Google</option>
+                            <option value="Firefox">Firefox</option>
+                            <option value="Chatgpt">Chatgpt</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td><label for="new">Newsletter</label></td>
+                        <td><input class="checkbox" type="checkbox">Ensure this box is checked if you would like to receive email updates</td>
+                    </tr>
+                </table>
+            </fieldset>
+            <input value="Send message" type="submit">
+        </form>
+    </div>
+
+
+    <!-- Main 2 -->
+    <div class="main2">
+        <form action="">
+            <fieldset class="v1">
+                <legend>Contact information</legend>
+                <ul>
+                    <li><label for="fname">First name:</label></li>
+                    <li><input type="text" name="nametxt" id="name1"></li>
+                </ul>
+                <ul>
+                    <li><label for="lname">Last name:</label></li>
+                    <li><input type="text" name="nametxt" id="name2"></li>
+                </ul>
+                <ul>
+                    <td><label for="email">E-mail:</label></td>
+                    <td><input type="text" name="email" id="el"></td>
+                </ul>
+    
+            </fieldset>
+    
+            <fieldset class="v2">
+                <legend><i>Competition Question</i></legend>
+                <p>How tall is the Eiffel Tower in Paris France?</p>
+                <ul>
+                    <ul>
+                        <li><input id="1" name="circle" type="radio"></li>
+                        <li>584 ft</li>
+                    </ul>
+                    <ul>
+                        <li><input id="2" name="circle" type="radio"></li>
+                        <li>784 ft</li>
+                    </ul>
+                    <ul>
+                        <li><input id="3" name="circle" type="radio"></li>
+                        <li>984 ft</li>
+                    </ul>
+                    <ul>
+                        <li><input id="4" name="circle" type="radio"></li>
+                        <li>1184 ft</li>
+                    </ul>
+                </ul>
+    
+            </fieldset>
+            <fieldset>
+                <legend>Tiebreaker Question</legend>
+                <p>In 25 words or less, say why you would like to win $10,1000:</p>
+                <textarea name="txt" id="txtname" cols="40" rows="10"></textarea>
+    
+            </fieldset>
+            <fieldset >
+                <legend><i>Enter competition</i></legend>
+                <button>Enter Competition</button>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

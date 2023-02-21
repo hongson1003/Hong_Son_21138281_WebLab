@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai6</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        /* css cho the table 1 */
+        .main-table1{
+            margin: 10px 0px;
+        }
+        .main-table1 table{
+            text-align: center;
+            height: 215px;
+            border-collapse: collapse;
+            border: 10px solid #EACFB4;
+            margin: 0px auto;
+        }
+        .main-table1 td, .main-table1 th{
+            border: 3px solid #EBD1BB;
+        }
+        .main-table1 .tdori{
+            background-color: #FF7800;
+        }
+        .main-table1 .tdyl{
+            background-color: #FFFF00;
+        }
+
+
+        /* css cho the table 2 */
+        .main-table2{
+            margin: 50px auto;
+            width: 220px;
+            height: 400px;
+            padding: 4px 0px;
+            box-shadow: 0 0 5px 5px grey;
+            background-color: #FFD078;
+        }
+        .main-table2 table{
+            font-weight: bold;
+            color: #9B4E3B;
+            width: 200px;
+            height: 385px;
+            margin: 0px auto;
+            background-color: transparent;
+        }
+        .main-table2 td, .main-table2 th{
+            border: 2px solid grey;
+        }
+        .main-table2 .onecell{
+            width: 14%; 
+        }
+        .main-table2 .threecell{
+            width: 42%;
+        }
+        .main-table2 .fourcell{
+            width: 57%;
+        }
+        .main-table2 .fivecell{
+            width: 71%;
+        }
+        .main-table2 tr:first-child{
+            text-align: center;
+        }
+
+
+            /* Css cho table caption */
+        .main-tablecaption{
+            padding: 10px 10px 20px;
+            margin: 50px;
+            width: 485px;
+            height: 200px;
+            margin: 50px auto;
+            background-color: #FFD078;
+        }
+        .main-tablecaption table{
+            margin: auto;
+            width: 460px;
+            height: 180px;
+        }
+        .main-tablecaption table{
+            text-align: center;
+            border: 5px solid #C000C0;
+        }
+        .main-tablecaption td , .main-tablecaption th{
+            border: 1px solid #C921C9;
+        }
+        .main-tablecaption tr:first-child{
+            background-color: #FFA0FF;
+        }
+        .main-tablecaption .bgblue{
+            color: black;
+            font-style: normal;
+            background-color: #AADDFF;
+        }
+        .main-tablecaption .bgpink{
+            background-color: #FFDDFF;
+            color: #4487FF;
+            font-weight: bold;
+            font-style: italic;
+        }
+        .main-tablecaption caption{
+            font-weight: bold;
+            color: #D000CD;
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <!-- Table 1 -->
+    <div class="main-table1">
+        <table width="300px" cellspacing="2" cellpadding="10">
+            <tr>
+                <td width="20%" height="25%">1</td>
+                <td width="225px" colspan="4">2</td>
+            </tr>
+            <tr>
+                <td rowspan="3">3</td>
+                <td class="tdori">4</td>
+                <td class="tdori">5</td>
+                <td class="tdyl" colspan="2" rowspan="2">6</td>
+            </tr>
+            <tr>
+                <td class="tdori">7</td>
+                <td class="tdori">8</td>
+            </tr>
+            <tr>
+                <td class="tdyl" colspan="2">9</td>
+                <td class="tdyl" width="40%" colspan="2">10</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Table2 -->
+    <div class="main-table2">
+        <table cellspacing="1">
+            <tr>
+                <td class="onecell">(1)</td>
+                <td class="onecell">(2)</td>
+                <td class="onecell">(3)</td>
+                <td class="threecell" colspan="3">(4)</td>
+                <td>(5)</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="fivecell" colspan="5"><u>Part I</u></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+                <td class="fourcell" colspan="4"><u>Chapter 1</u></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="3"></td>
+                <td colspan="3"><u>Section A</u></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="3"></td>
+                <td colspan="3"><u>Section B</u></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+                <td colspan="4"><u>Chapter 2</u></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="3"></td>
+                <td colspan="3"><u>Section A</u></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="3"></td>
+                <td colspan="3"><u>Section B</u></td>
+                <td></td>
+            </tr>
+
+        </tr>
+        <tr>
+            <td></td>
+            <td colspan="5"><u>Part II</u></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="2"></td>
+            <td colspan="4"><u>Chapter 3</u></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3"></td>
+            <td colspan="3"><u>Section A</u></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3"></td>
+            <td colspan="3"><u>Section B</u></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="2"></td>
+            <td colspan="4"><u>Chapter 4</u></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3"></td>
+            <td colspan="3"><u>Section A</u></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3"></td>
+            <td colspan="3"><u>Section B</u></td>
+            <td></td>
+        </tr>
+        </table>
+    </div>
+
+        <!-- Su dung tag caption ben trong table -->
+        <div class="main-tablecaption">
+            <table cellpadding="5px" cellspacing="0.7">
+                <caption>NUMBERS 1-5 in VARIOUS LANGUAGES</caption>
+                <tr>
+                    <td class="bgpink" width="22px" height="22px"></td>
+                    <td><b><u>English</u></b></td>
+                    <td><b><u>Espanol</u></b></td>
+                    <td><b><u>Francais</u></b></td>
+                    <td><b><u>Italiano</u></b></td>
+                    <td><b><u>Deutsch</u></b></td>
+                </tr>
+                <tr  class="bgpink">
+                    <td class="bgblue">1</td>
+                    <td>one</td>
+                    <td>uno</td>
+                    <td>un</td>
+                    <td>uno</td>
+                    <td>eins</td>
+                </tr  class="bgpink">
+                <tr class="bgpink">
+                    <td class="bgblue">2</td>
+                    <td>two</td>
+                    <td>dos</td>
+                    <td>deux</td>
+                    <td>due</td>
+                    <td>zwei</td>
+                </tr>
+                <tr  class="bgpink">
+                    <td class="bgblue">3</td>
+                    <td>three</td>
+                    <td>tres</td>
+                    <td>trois</td>
+                    <td>tre</td>
+                    <td>drei</td>
+                </tr>
+                <tr  class="bgpink">
+                    <td class="bgblue">4</td>
+                    <td>four</td>
+                    <td>cuatro</td>
+                    <td>quatre</td>
+                    <td>quattro</td>
+                    <td>vier</td>
+                </tr>
+                <tr class="bgpink">
+                    <td class="bgblue">5</td>
+                    <td>five</td>
+                    <td>cinco</td>
+                    <td>cinq</td>
+                    <td>cinque</td>
+                    <td>finf</td>
+                </tr>
+            </table>
+        </div>
+
+
+
+</body>
+</html>

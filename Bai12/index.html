@@ -1,0 +1,78 @@
+file:///D:/Downloads/HTCongNgheWEB/baitap16Feb2023/a.html
+hover vào checkbox biến mất hợp lí hơn
+ờ ha
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Bai12</title>
+
+    <style>
+        .box{
+            margin:auto;
+            margin-top: 200px;
+            width: 290px;
+            height: 110px;
+            box-shadow: 0 0 5px 5px grey;
+            padding: 5px;
+            box-sizing: border-box;
+            position: relative;
+        }
+        .box button{
+            transition: 0.5;
+            margin-top: 15px;
+        }
+        .box .checkbox{
+           display: block;
+            opacity: 0;
+            width: 170px;
+            height: 28px;
+            background-color: #FBFBFB; 
+            /* #FBFBFB */
+            box-shadow: 4px grey;
+            color: black;
+            font-size: 14px;
+            padding-top: 6px;
+            box-sizing: border-box;
+            text-align: center;
+            border: 1px solid #333;
+            position: absolute;
+            top: 56px;
+            left: 75px;
+            transition: 0.4s;
+        }
+        .checkbox i{
+            color:#FAAB20;
+        }
+        input[type="text"].btn:not(:hover) + .checkbox  {
+           opacity: 1;
+        }
+    </style>
+
+</head>  
+<body>
+        <div class="box">
+            <label for="name">Name:</label><br>
+            <input class="btn" placeholder="Thanh Van" type="text"> 
+            <div class="checkbox">
+               <i class="fa-sharp fa-solid fa-circle-exclamation"></i>
+               <span>Please fill out this field</span>
+         </div>
+            <br>
+            <button>Submit</button>
+
+            
+        </div>
+<!-- 
+      <script>
+         const input = document.getElementsByTagName("input")
+         const checkbox = document.querySelector(".box")
+         input.onclick = function() {
+            checkbox.style.display = "block"
+         }
+      </script> -->
+</body>
+</html>
