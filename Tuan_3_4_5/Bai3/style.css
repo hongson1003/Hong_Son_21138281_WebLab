@@ -1,0 +1,29 @@
+div {
+    padding: 5px;
+    width: 500px;
+    margin: auto;
+    background-color: #fff;
+    box-shadow: 0 0 5px 2px violet;
+}
+
+table {
+    border: 1px solid black;
+    margin: auto;
+}
+
+table th {
+    background-color: grey;
+}
+
+body {
+    background-color: grey;
+}
+
+table tr:last-child {
+    background-color: grey;
+}
+
+td {
+    padding: 0px 2px;
+    box-sizing: border-box;
+}

@@ -1,0 +1,50 @@
+.p1 {
+    text-indent: 40px;
+    color: red;
+}
+
+.p2 {
+    text-align: right;
+    color: blue;
+}
+
+.p3 {
+    color: green;
+    text-align: center;
+}
+
+.p4 {
+    color: violet;
+    text-align: left;
+}
+
+.p5 {
+    text-decoration: underline;
+    color: aqua;
+}
+
+.p6 {
+    color: green;
+    text-decoration: line-through;
+}
+
+.p7 {
+    color: grey;
+    ext-decoration: overline;
+}
+
+.p8 {
+    box-shadow: 4px 4px 8px blue;
+    /* display: inline-block; */
+    text-decoration: blink;
+    /* Chrom khong ho tro trinh duyet chrom */
+    color: violet;
+}
+
+.p9 {
+    letter-spacing: 10px;
+}
+
+.p10 {
+    word-spacing: 30px;
+}
