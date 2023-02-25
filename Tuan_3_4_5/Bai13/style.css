@@ -1,0 +1,43 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 686px;
+    height: 220px;
+    box-shadow: 0px 0px 20px grey;
+    margin: 30px auto;
+}
+.box{
+    text-align: center;
+    padding-top: 10px;
+    box-sizing: border-box;
+    border: 3px solid #4040FF;
+    width: 155px;
+    height: 190px;
+    overflow: hidden;
+}
+.box img{
+    width: 80%;
+    height: 65%;
+    margin-bottom: 10px;
+    transition: 0.6s;
+}
+.box:hover img{
+    transition: 0.6s;
+    scale: 1.35;
+    margin-bottom: 20px;
+}
+.box p{
+    padding: 0px 5px;
+}
+.box:hover p{
+    transition: 0.6s;
+    font-size: 15px;
+    color: violet;
+}
+
+
