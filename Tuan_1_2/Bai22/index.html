@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai22</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            padding: 0px;
+            border: none;
+            margin: 0px;
+        }
+        .main{
+            width: 720px;
+            height: 530px;
+            margin: 20px auto;
+            box-shadow:  0 5px 5px grey;
+            display: flex;
+            border-right: 15px solid #025A9A;
+        }
+        .main .column1{
+            width: 140px;
+            height: 100%;
+
+        }
+        .column1 img{
+            width: 141px;
+            height: 141px;
+            padding-left: 20px;
+            box-sizing: border-box;
+        }
+        .column1 .imgg{
+            height: 141px;
+            width: 141px;
+            background-color: #005A9B;
+            opacity: 0.8;
+        }
+        /* CSS cho wrap */
+        :root{
+         --temp: 10px;
+      }
+   .wrap {
+      height: calc(100% - 141px);
+      width: 141px;
+      /* box-shadow: -8px 8px 8px 4px rgba(0, 0, 0, 0.2); */
+      position: relative;
+      /* display: flex;
+      align-items: center; */
+      background-color: rgb(232, 232, 232);
+      /* overflow: hidden; */
+   }
+   .item {
+    font-weight: 800;
+    color: #23456D;
+    position: absolute;
+    width: calc(141px + var(--temp));
+    height: 52px;
+    box-shadow:  -5px 10px 4px rgba(0, 0, 0, 0.1),0  3px 1px rgba(0, 0, 0, 0.05) ;
+    /* float: left; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    background-color: rgb(240, 240, 240);
+    z-index: 1;
+   }
+   .item:after {
+      content: '';
+      position: absolute;
+      display: block;
+      top: 100%;
+      right: 0;
+      width: 10px;
+      height: 10px;
+      background-image: linear-gradient( to bottom right, rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.1), transparent,  transparent);
+      /* border: 6px solid ;
+      border-color: rgba(0, 0, 0, 0.15) transparent transparent rgba(0, 0, 0, 0.15); */
+   }
+   /* .item::before {
+      content: '';
+      position: absolute;
+      display: block;
+      width: var(--temp);
+      height: var(--temp);
+      top: 100%;
+      right: 0;
+      background-color: transparent;
+      box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.1);
+      z-index: 1;
+   } */
+   span {
+      text-align: center;
+   }
+   .column1 .item1{
+    font-size: 18px;
+    margin-top: 40px;
+   }
+   .column1 .item2{
+    margin-top: 210px;
+   }
+   .column1 .content1{
+    position: absolute;
+    margin-top: 120px;
+    left: 0;
+    right: 0;
+   }
+   .column1 .content p{
+    padding: 5px 0px;
+    margin: 0px 15px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 20px;
+   }
+   .column1 .content1 p{
+    border-bottom: 1px solid #888;
+
+   }
+   .column1 .content2{
+    position: absolute;
+    margin-top: 280px;
+   }
+   .column1 .content2 p + p{
+    border-top: 1px solid grey;
+   }
+
+   /* CSS cho column 2 */
+   .column2{
+    width: calc(721px - 140px);
+    height: 100%;
+    background-color: grey;
+   }
+   .column2 .title{
+    position: relative;
+    width: 100%;
+    height: 141px;
+    background-color: #EEEEEE;
+   }
+   .column2 .title .views{
+    position: absolute;
+    max-width: 230px;
+    background-color: #E8E7E7;
+    margin-top: 10px;
+    margin-left: 20px;
+    border: 1px solid grey;
+    padding: 8px;
+    border-radius: 5px;
+   }
+   .column2 .title .views li{
+    display: inline-block;
+    margin-right: 10px;
+   }
+   .column2 .title .views .underblue{
+    border-bottom: 1px solid blue;
+   }
+   .column2 .title .go{
+    position: absolute;
+    width: 200px;
+    right: 50px;
+    top: 7px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid grey;
+   }
+   .column2 .title input{
+    border-radius: 5px;
+    padding: 5px;
+    color: #ffffff;
+    background-color: #555555;
+    position: absolute;
+    right: 5px;
+    top: 10px;
+   }
+   .column2 .title__content{
+    position: absolute;
+    top: 68px;
+    left: 30px;
+    width: 80%;
+    height: 50px;
+    display: flex;
+
+   }
+   .column2 .title h3{
+    font-size: 15px;
+    margin: 10px;
+    font-weight: 500;
+    color: #638DBA;
+   }
+   .column2 .title .search{
+    position: absolute;
+    right: 5px;
+    bottom: 0px;
+    width: 120px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid grey;
+    border-radius: 5px;
+    box-shadow: 0px -3px grey;
+   }
+   .column2 .title .search img{
+    width: 50%;
+    height: 70%;
+   }
+
+   .column2 .container{
+    width: 100%;
+    height: calc(100% - 141px);
+    background-color: #ffffff;
+    z-index: 0;
+    position: relative;
+    display: flex;
+   }
+   .container .txtleft{
+    position: absolute;
+    bottom: 0px;
+    width: 55%;
+    top: 40px;
+    left: 30px;
+   }
+
+   .container .txtleft details summary{
+    float: left;
+   }
+
+   .box1{
+    width: 100%;
+    height: 30%;
+    background-color: #F1F7FB;
+    padding: 15px;
+    box-sizing: border-box;
+   }
+   .box1 h3{
+    color: #0E3666;
+    font-weight: 600;
+    margin-bottom: 10px;
+   }
+   .box1 span:last-child{
+    display: inline-block;
+    margin-left: 10px;
+    padding-left: 5px;
+    text-decoration: underline #BDCFDC;
+   }
+
+   .box1 span + span{
+    border-left: 1px solid grey;
+   }
+
+   .box2{
+    width: 100%;
+    height: 70%;
+    background-color: #EEEEEE;
+    font-size: 20px;
+    padding: 15px;
+    box-sizing: border-box;
+   }
+
+   .box2 p u{
+    color: #2B70C6;
+   }
+
+   .txtright{
+    font-size: 18px;
+    position: absolute;
+    bottom: 0px;
+    top: 40px;
+    width: 30%;
+    right: 10px;
+
+   }
+   .column2 .skip{
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    right: 10px;
+    width: 60px;
+    height: 25px;
+    top: 10px;
+   }
+
+   .column2 .skip .fa-solid{
+    opacity: 0.4;
+   }
+
+   .column2 .txtright p{
+    color: #0B74C7;
+   }
+   .column2 .box{
+    color: #2D4760;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin-top: 20px;
+    box-shadow: 0px 8px 5px grey;
+   }
+
+   .column2 .txtright p:last-child{
+    position: absolute;
+    bottom: 1px;
+    left: 5px;
+   }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="column1">
+            <div class="imgg">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS4XumhoLH-ZfPVpcLruopS_tjnPxCc7ZfT4pMbJHI0Gy_g1emJvcYKdN-NLKF4IBxzwE&usqp=CAU" alt="">
+            </div>
+            <div class="wrap">
+                <div class="item item1">
+                   <span>technical report <span><i class="fa-sharp fa-regular fa-envelope-open-text"></i></span></span>
+                   
+                </div>
+                <div class="content content1">
+                    <p>By date</p>
+                    <p>By group</p>
+                </div>
+
+                <div class="item item2">
+                    <span>WEB AND INDUSTRY <span><i class="fa-sharp fa-regular fa-envelope-open-text"></i></span></span>
+                </div>
+                <div class="content content2">
+                    <p>Automotive</p>
+                    <p>Digtal</p>
+                    <p>Publishing</p>
+                </div>
+            </div>
+        </div>
+        <div class="column2">
+            <div class="title">
+                <div class="views">
+                    <ul>
+                        <li>Views:</li>
+                        <li>desktop</li>
+                        <li class="underblue">mobile</li>
+                        <li class="underblue">print</li>
+                    </ul>
+                </div>
+
+                <div class="go">
+                    <p>W3C By region</p>
+                    <details open><summary></summary></details>
+                </div>
+                <input value="GO" type="button">
+
+                <div class="title__content">
+                    <h3>STANDARTS</h3>
+                    <h3>PARTICIPATE</h3>
+                    <h3>MEMBERSHIP</h3>
+                    <h3>ABOUT W3C</h3>
+                </div>
+                
+                <div class="search">
+                    <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_160x56dp.png" alt="">
+                    <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                    
+                </div>
+            </div>
+
+
+            <!-- Contain -->
+            <div class="container">
+                <div class="txtleft">
+                    <div class="box1">
+                        <details open><summary></summary>
+                        </details>
+                        <h3>MathML 3.0 Becomes ISO/IEC <br> International Standard</h3>
+                        <span>23 June 2015</span>
+                        <span>Archive</span>
+                    </div>
+
+                    <div class="box2">
+                        <p>Lorem ipsum dolor sit <u>amet consectetur adipisicing elit</u>. Possimus maxime rerum ullam, unde vel repellat labore quasi <u>amet explicabo mollitia</u> repudiandae ratione necessitatibus blanditiis cum quidem voluptate. Nulla, dicta ipsam.</p>
+                        <p>Lorem <u>ipsum</u> dolor sit amet </p>
+
+                    </div>
+                </div>
+                <div class="skip">
+                    <i class="fa-solid fa-caret-right"></i>
+                    <span>Skip</span>
+                    <i class="fa-solid fa-caret-left"></i>
+                </div>
+
+
+                <div class="txtright">
+                    <p>Whether you’re upgrading your office <u></u> up new work-from-home stations, you must buy the <u>right computer and l</u> aptop accessories. Laptop accessories, like laptohonu to attend work calls without any int                    <div class="box">
+                        <h3>W3C BLOG <i class="fa-solid fa-book-tanakh"></i></h3>
+                    </div>
+                    <p>WICG: Evolving the Web from the ground up</p>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
