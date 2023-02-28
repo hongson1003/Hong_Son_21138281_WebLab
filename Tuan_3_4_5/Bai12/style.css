@@ -3,8 +3,39 @@
     padding: 0px;
 }
 .main{
+    overflow: hidden;
+    position: relative;
+    padding: 5px;
+    box-sizing: border-box;
     width: 640px;
     height: 390px;
     margin: 40px auto;
-    box-shadow: 0px 0px 20px grey;
+    box-shadow: 0px 0px 10px #888888;;
+}
+.main__title{
+    font-size: 60px;
+    font-weight: 950;
+    text-shadow: 0 0 3px #000000,    3px 0 3px #000000, 0 3px 3px #000000,  -3px 0 3px #000000,  0 -3px 3px #000000;
+    margin-bottom: 55px;
+    margin-top: 40px;
+    line-height: 69px;
+}
+.main__item{
+    position: absolute;
+    width: 300px;
+    height: 45px;
+    background-color: #AA0000;
+    top: 37px;
+    left: -75px;
+    text-align: center;
+    padding-top: 10px;
+    box-sizing: border-box;
+    border: 3px solid #F29090;
+    transform: rotate(-45deg);
+}
+.main__item__text{
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 600;
+
 }
