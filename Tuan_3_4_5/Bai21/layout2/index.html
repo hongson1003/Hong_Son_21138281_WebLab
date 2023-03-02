@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai21--Layout2</title>
+    <style>
+        .wrapper{
+            width: 865px;
+            height: 180px;
+            border: 1px solid black;
+            margin: 30px auto;
+            background-color: #E2EFD9;
+            
+        }
+        .border--bottom{
+            border-bottom: 1px solid black;
+        }
+        .header{
+            text-align: center;
+            height: 15%;
+        }
+        .section{
+            height: 70%;
+            display: flex;
+        }
+        .section__left{
+            width: 20%;
+        }
+        .section__center{
+            width: calc(100% - 20% - 25%);
+        }
+        .section__right{
+            width: 25%;
+        }
+        .footer{
+            text-align: center;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="border--bottom header">
+            <span>Header</span>
+        </div>
+        <div class="border--bottom section">
+            <div class="section__left">
+                <span>nav</span>
+            </div>
+            <div class="section__center">
+
+            </div>
+            <div class="section__right">
+                <span>section</span>
+            </div>
+        </div>
+        <div class="footer">
+            <span>footer</span>
+        </div>
+    </div>
+</body>
+</html>

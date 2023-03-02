@@ -44,3 +44,10 @@
     opacity: 1;
     transition: 1s;
 }
+.nav__ul__products:hover{
+    transition: 1s;
+    color: #AF9700;
+}
+.nav__ul__products {
+    transition: 1s;
+}

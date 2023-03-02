@@ -1,0 +1,64 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: none;
+}
+ul{
+    list-style-type: none;
+}
+.main{
+    width: 790px;
+    height: 190px;
+    box-shadow: 0px 0px 20px grey;
+    margin: 20px auto;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+}
+.main .box{
+    padding-top: 20px;
+    padding-left: 5px;
+    box-sizing: border-box;
+    width: 20%;
+    height: 33%;
+    background-color: #2F3036;
+}
+.box + div{
+    border-left: 2px solid #ffffff;
+}
+.box a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.box3{
+    transition: 0.6s;
+    position: relative;
+}
+.box3 ul{
+    opacity: 0;
+    color: #333;
+    padding: 10px;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0px;
+    right: -76%;
+    height: 120px;
+    bottom: -120px;
+    background-color: green;
+}
+.box3 li + li{
+    font-size: 18px;
+    margin-top: 18px;
+}
+/* Hover CSS */
+.box3:hover{
+    background-color: #90EE90;
+    transition: 0.6s;
+}
+.box3:hover ul{
+    opacity: 1;
+    transition: 0.6s;
+    cursor: pointer;
+}
+

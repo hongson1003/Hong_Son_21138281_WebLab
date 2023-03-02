@@ -1,0 +1,129 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: none;
+}
+ul{
+    list-style-type: none;
+}
+.main{
+    width: 540px;
+    height: 425px;
+    box-shadow: 0 0 25px grey;
+    margin: 30px auto;
+}
+.baner{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(152,149,144);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.baner img{
+    width: 25%;
+    height: 100%;
+}
+.title p{
+    font-weight: 800;
+    color: #ffffff;
+}
+.title p:last-child{
+    font-size: 10px;
+}
+
+.nav{
+    background-color: #AEACA8;
+    padding: 2px 0px;
+    box-sizing: border-box;
+}
+.nav ul{
+    display: flex;
+    width: 250px;
+    justify-content: space-around;
+}
+.nav li{
+    color: #ffffff;
+    margin: 0px 10px;
+    font-size: 11px;
+}
+.nav li:first-child{
+    color: grey;
+    font-weight: 700;
+}
+
+.container{
+    height: 314px;
+    width: 100%;
+    display: flex;
+}
+.container__left{
+    font-size: 12px;
+    width: 75%;
+    height: 100%;
+    border-right: 1px solid grey;
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+.container__left__top{
+    width: 400px;
+    height: 46%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+
+}
+.container__left__top div:first-child{
+    width: 50%;
+    height: 100%;
+    border: 1px solid grey;
+    text-align: center;
+    margin-right: 18px;
+}
+.container__left__top div:last-child{
+    width: 50%;
+}
+.container__left__top div:first-child img{
+    margin-top: 5px;
+    width: 95%;
+    height: 80%;
+}
+.container__left__top div:last-child p:nth-child(2){
+    color: red;
+}
+.container__right{
+    width: 25%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.container__right p{
+    margin: 10px 0px;
+    font-size: 12px;
+}
+.red--bottom{
+    color: red;
+    border-bottom: 1px solid grey;
+    padding-left: 5px;
+    padding-bottom: 2px;
+}
+.container__right h4{
+    color: red;
+    font-weight: 500;
+}
+
+.footer{
+    width: 100%;
+    height: 30px;
+    background-color: #AEACA8;
+    font-size: 12px;
+    padding-top: 7px;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+
+
+
