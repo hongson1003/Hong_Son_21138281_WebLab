@@ -82,8 +82,15 @@ font-family: 'Anton', sans-serif;
 }
 .menu__main__text--span{
     width: 80%;
-    display: inline-block;
+    height: 44px;
+    display: inline-flex;
+    align-items: flex-start;
     margin-left: 5px;
+    box-sizing: border-box;
+    
+}
+.wrapper .menu__main__text--span span{
+    margin: 0;
 }
 .menu__main__text{
     display: flex;
